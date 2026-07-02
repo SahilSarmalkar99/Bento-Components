@@ -5,6 +5,9 @@ import WhyUs from './component/WhyUs'
 import VaultlineSection from './component/VaultlineSection'
 import DevelopmentPartner from './component/DevelopmentPartner'
 import FashionSection from './component/FashionSection'
+import FlexibilitySection from './component/FlexibilitySection'
+import FeaturesSection from './component/FeaturesSection'
+import AIFeaturesSection from './component/AIFeaturesSection'
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
       {/* <VaultlineSection /> */}
       {/* <DevelopmentPartner /> */}
       {/* <FashionSection /> */}
+      {/* <FlexibilitySection /> */}
+      {/* <FeaturesSection /> */}
+      <AIFeaturesSection />
     </div>
   )
 }
