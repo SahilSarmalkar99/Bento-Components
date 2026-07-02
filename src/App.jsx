@@ -9,12 +9,12 @@ import FashionSection from './component/FashionSection'
 const App = () => {
   return (
     <div>
-      <ProcessSection />
-      <BankingFeatures />
-      <WhyUs />
-      <VaultlineSection />
-      <DevelopmentPartner />
-      <FashionSection />
+      {/* <ProcessSection /> */}
+      {/* <BankingFeatures /> */}
+      {/* <WhyUs /> */}
+      {/* <VaultlineSection /> */}
+      {/* <DevelopmentPartner /> */}
+      {/* <FashionSection /> */}
     </div>
   )
 }
