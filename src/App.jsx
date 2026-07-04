@@ -19,6 +19,7 @@ import PricingSection from './component/PricingSection'
 import PricingSection2 from './component/PricingSection2'
 import AIArchitecture from './component/AIArchitecture'
 import MilestonesSection from './component/MilestonesSection'
+import ReportsInsights from './component/ReportsInsights'
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
       <PricingSection2 />
       <AIArchitecture />
       <MilestonesSection />
+      <ReportsInsights />
     </div>
   )
 }

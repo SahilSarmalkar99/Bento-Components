@@ -9,6 +9,44 @@ const features = [
   { icon: "✔️", title: "Validation Check" },
 ];
 
+const layerImages = [
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147236970_fcitmd.png",
+    top: "13%",
+    // right: "10%",
+    width: "220px",
+  },
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147240172_d0rmzo.png",
+    top: "30%",
+    // right: "18%",
+    width: "210px",
+  },
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147240171_ilvu2h.png",
+    top: "42%",
+    // left: "4%",
+    width: "225px",
+  },
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147240174_bjdfmq.png",
+    top: "53%",
+    // left: "18%",
+    width: "220px",
+  },
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147240173_lgjugr.png",
+    top: "63%",
+    // left: "2%",
+    width: "220px",
+  },
+  {
+    img: "https://res.cloudinary.com/dor2qddak/image/upload/v1783145899/Frame_2147240175_kl2jqy.png",
+    top: "79%",
+    // left: "16%",
+    width: "220px",
+  },
+];
 export default function AIArchitecture() {
   return (
     <section className="relative overflow-hidden bg-[#FAFAFA] py-24">
@@ -58,7 +96,11 @@ font-bold
 text-[#1D1D1D]
 leading-[0.93]
 tracking-[-0.055em]
-text-[clamp(42px,5vw,66px)]
+text-[38px]
+sm:text-[48px]
+lg:text-[66px]
+
+leading-[0.95]
 "
             >
               Smarter Architecture,
@@ -86,7 +128,19 @@ font-[450]
               results
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div
+className="
+mt-8
+
+flex
+flex-wrap
+
+justify-center
+lg:justify-start
+
+gap-4
+"
+>
 
               <button
                 className="
@@ -149,7 +203,7 @@ hover:bg-[#F7F7F7]
 
           {/* Tabs */}
 
-          <div className="grid grid-cols-2 gap-3 p-4">
+          <div className="grid grid-cols-2 gap-3 text-center p-4">
 
             <div
               className="
@@ -172,7 +226,7 @@ text-[20px]
 border
 border-[#ECECEC]
 bg-[#FCFCFC]
-text-[#C5C5C5]
+text-[#C5C5C5] py-4
             "
             >
               Other companies
@@ -183,28 +237,50 @@ text-[#C5C5C5]
           {/* ================= CONTENT ================= */}
 
           <div
-            className="
-            grid
-            items-center
-            gap-10
-            px-7
-            pb-10
-            pt-6
-            lg:grid-cols-[220px_1fr_330px]
-          "
-          >
+  className="
+    grid
+
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-[220px_minmax(480px,1fr)_250px]
+
+    items-center
+
+    gap-8
+    lg:gap-10
+
+    px-5
+    md:px-7
+
+    pb-10
+    pt-6
+  "
+>
 
             {/* LEFT TEXT */}
 
             <div
-              className="
+className="
+order-1
+
+max-w-full
+lg:max-w-[220px]
+
+text-center
+lg:text-left
+
+mx-auto
+lg:mx-0
+
 font-mono
-text-[18px]
-leading-[1.45]
-tracking-[-0.04em]
+text-[16px]
+lg:text-[18px]
+
+leading-[1.6]
+
 text-[#5B5B5B]
 "
-            >
+>
 
               <p
                 className="
@@ -233,110 +309,108 @@ text-[#5B5B5B]
             {/* CENTER IMAGE */}
 
             <div
-              className="
-              order-1
-              lg:order-2
-              flex
-              justify-center
-            "
-            >
-
-              <img
-    src="https://res.cloudinary.com/dor2qddak/image/upload/v1783107392/Frame_2147240170_wxqslp.png"
-    alt=""
-    className="
-    w-[330px]
-    sm:w-[430px]
-    md:w-[520px]
-    object-contain
-    drop-shadow-[0_35px_40px_rgba(0,0,0,.10)]
-    transition-all
-    duration-500
-    hover:scale-[1.02]
-"
-/>
-
-            </div>
-
-            {/* RIGHT FEATURES */}
-
-            <div
-              className="
-              order-3
-              flex
-              flex-col
-              gap-5
-            "
-            >
-
-              {features.map((item, index) => (
-                <div
-                  key={index}
-                  className="
-                  group
-                  flex
-                  items-center
-                  gap-4
-                "
-                >
-{/* Card */}
-
-                  <div
-
-                    className="
-                    relative
-                    flex
-                    items-center
-                    gap-4
-                    rounded-full
-                    border
-                    border-[#ECECEC]
-                    bg-white
-                    px-5
-                    py-4
-                    shadow-[0_8px_25px_rgba(0,0,0,.05)]
-                    transition-all
-                    duration-300
-                    hover:-translate-y-1
-                    hover:shadow-[0_18px_35px_rgba(0,0,0,.08)]
-                    "
-
-                  >
-
-                    <div
 className="
+order-2
+
+relative
+
 flex
-h-11
-w-11
-items-center
 justify-center
-rounded-full
-border
-border-[#ECECEC]
-bg-[#F9F9F9]
-text-lg
-shrink-0
+items-center
+
+mt-10
+lg:mt-0
 "
 >
-                      {item.icon}
-                    </div>
 
-                    <span
-                      className="
-                      text-[17px]
-                      font-medium
-                      text-[#505050]
-                    "
-                    >
-                      {item.title}
-                    </span>
+              <img
+                src="https://res.cloudinary.com/dor2qddak/image/upload/v1783107392/Frame_2147240170_wxqslp.png"
+                alt=""
+                className="
+w-[280px]
 
-                  </div>
+sm:w-[360px]
 
-                </div>
-              ))}
+md:w-[430px]
+
+lg:w-[500px]
+
+xl:w-[540px]
+
+object-contain
+
+drop-shadow-[0_35px_40px_rgba(0,0,0,.10)]
+
+transition-all
+duration-500
+
+hover:scale-[1.02]
+"
+              />
 
             </div>
+            {/* right section */}
+            <div
+className="
+order-3
+
+relative
+
+hidden
+lg:block
+
+h-[520px]
+w-[250px]
+"
+>
+              {layerImages.map((item, index) => (
+                <img
+                  key={index}
+                  src={item.img}
+                  alt=""
+                  className="
+        absolute
+        object-contain
+        transition-all
+        duration-300
+        hover:scale-105
+      "
+                  style={{
+                    top: item.top,
+                    left: item.left,
+                    width: item.width,
+                  }}
+                />
+              ))}
+            </div>
+
+            <div
+className="
+order-3
+
+mt-10
+
+grid
+grid-cols-2
+gap-4
+
+lg:hidden
+"
+>
+  {layerImages.map((item, index) => (
+    <img
+      key={index}
+      src={item.img}
+      alt=""
+      className="
+        w-full
+        max-w-[180px]
+        mx-auto
+        object-contain
+      "
+    />
+  ))}
+</div>
 
           </div>
 
